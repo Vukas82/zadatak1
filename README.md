@@ -1,2 +1,3 @@
 # zadatak1
-resenje prvog zadatka
+ispravak resenja prvog zadatka
+pokretanje pomocu komande node index.js
