@@ -1,28 +1,7 @@
-var http = require('http');
-var fun = require('./function');
+const fun = require('./function');
+const config = require('./config');
 
-
-function onRequest(request, response) {
-   response.writeHead(200, {'Content-Type': 'text/html' });  //'text/plain'  text/html
-
-    
-    
-    
-    fun.random(min,max);
-    
-    
-    //fun.minIntegerFromArray(array);
-    
-    
-    fun.minIntegerFromString(string);
-    
-    
-    fun.concatStringsByLength(arrayOfStrings, type);
-    
-    
-    
-    response.end();
-    
-}
-
-http.createServer(onRequest).listen(3000);
+fun.random(config);
+fun.minIntegerFromArray(config);
+fun.minIntegerFromString(config);
+fun.concatStringsByLength(config);
